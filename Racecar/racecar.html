@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <title>racecar using jQuery</title>
+    <link rel="stylesheet" type="text/css" href="carstyle.css">
+    </head>
+    
+    <body id="race">
+        
+        <h2>jQuery Car Racer 2.0</h2>
+        <button type="button" id="start">Race!</button>
+        <button type="button" id="reset">Reset</button>    
+       
+            <div id="track">
+                <img src="img/car1.png" alt="green car" id="car1" class="car">
+                <img src="img/car2.png" alt="red car" id="car2" class="car">
+            </div><!--track-->
+        
+            <div id="result" class="clearfix">
+                <h3>Results</h3>
+                <div class="raceinfo" id="raceInfo1">Car 1<span></span></div>
+                <div class="raceinfo" id="raceInfo2">Car 2<span></span></div>
+            </div><!--result-->
+      
+           <script src="./jquery-2.1.4.js"></script>
+        
+        <script src="./race.js"></script>
+    </body>
+</html>
