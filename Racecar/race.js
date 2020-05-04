@@ -19,13 +19,7 @@ $('#start').click(function(){
     
      var raceComplete = false;
      var position = 'first';
-    
-     $('#car1').animate({
-        
-            // move the car width of the racetrack
-            left: trackWidth
-            
-        }, raceTime1, function() {
+     const func = () => {
             
             // animation is complete
             
@@ -34,8 +28,15 @@ $('#start').click(function(){
             
             // give some text feedback in the race info box
             $('#raceInfo1 span').text( 'Finished in ' + position + ' place and clocked in at ' + raceTime1 + ' milliseconds!' );
+           
             
-        });
+        }
+     $('#car1').animate({
+        
+            // move the car width of the racetrack
+            left: trackWidth
+            
+        }, raceTime1,func );
     
     $('#car2').animate({
         
