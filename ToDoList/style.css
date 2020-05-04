@@ -1,0 +1,87 @@
+/* CSS styles */
+
+#TodolistWrapper{
+ width: 960px;  
+ text-align: center;
+}
+
+#Todolist:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+#Todolist ul {
+    width: 14.28%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left;
+}
+
+#Todolist li {
+    background: none;
+    padding: 5px;
+    border: none;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;   
+}
+
+#Todolist li.listTitle {
+    background: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-right: solid 1px white;
+    font-size: 14px;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+}
+
+#Todolist li:hover {
+    background: #eee;
+}
+
+#Todolist li.listTitle:hover,
+#Todolist li.listTitle:active {
+    cursor: default;
+    transform: none;
+}
+
+#Todolist .emptySpace {
+    background: #fc3;
+    border: dashed 1px #777;
+    height: 10px;
+}
+
+#Todolist li.addItem {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: none;
+}
+
+#Todolist ul:hover li.addItem {
+    display: block;
+}
+
+#Todolist li.addItem input {
+    width: 100%;
+    padding: 4px;
+}
+
+#Todolist li.addItem:active {
+    transform: none;   
+}
+
+
